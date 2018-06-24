@@ -4,7 +4,7 @@
 
 **Objective:** An application which lets user to create topics/projects in which different users having same application can comment with real time updates.
 **Application Screenshots**
-![](https://raw.githubusercontent.com/utsavrai/Project-Sync-Real-time-offline---Powered-by-AWS-App-Sync-Cognito-Lambda-and-DynamoDB/master/Images/Screenshot_20180624-184152.jpg =720x1280)
+![](https://raw.githubusercontent.com/utsavrai/Project-Sync-Real-time-offline---Powered-by-AWS-App-Sync-Cognito-Lambda-and-DynamoDB/master/Images/Screenshot_20180624-184152.jpg=720x1280)
 ![](https://raw.githubusercontent.com/utsavrai/Project-Sync-Real-time-offline---Powered-by-AWS-App-Sync-Cognito-Lambda-and-DynamoDB/master/Images/Screenshot_20180624-125725.jpg =720x1280)
 ![](https://raw.githubusercontent.com/utsavrai/Project-Sync-Real-time-offline---Powered-by-AWS-App-Sync-Cognito-Lambda-and-DynamoDB/master/Images/Screenshot_20180624-125757.jpg =720x1280)
 ![](https://raw.githubusercontent.com/utsavrai/Project-Sync-Real-time-offline---Powered-by-AWS-App-Sync-Cognito-Lambda-and-DynamoDB/master/Images/Screenshot_20180624-125804.jpg =720x1280)
