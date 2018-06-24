@@ -1,0 +1,60 @@
+mutation AddProject($name: String!, $when: String!,$description: String!){
+  createProject(name:$name, when:$when, description:$description){
+      ...Project
+  }
+}
+
+mutation DeleteProject($id: ID!) {
+  deleteProject(id: $id) {
+    id
+    description
+    name
+  }
+}
+
+mutation CommentOnProject($projectId: ID!, $content: String!, $createdAt: String!) {
+  commentOnProject(projectId:$projectId, content:$content, createdAt:$createdAt) {
+    projectId
+    content
+    commentId
+    createdAt
+  }
+}
+
+query GetProject($id:ID!) {
+ getProject(id:$id) {
+     ...Project
+	}
+}
+
+query ListProjects {
+   listProjects {
+       items {
+      ...Project
+    }
+   }
+}
+
+subscription NewCommentOnProject($projectId: String!) {
+  subscribeToProjectComments(projectId: $projectId) {
+    projectId
+    commentId
+    content
+    createdAt
+  }
+}
+
+fragment Project on Project {
+      id
+      description
+      name
+      when
+      comments {
+        items {
+          projectId
+          commentId
+          content
+          createdAt
+        }
+      }
+}

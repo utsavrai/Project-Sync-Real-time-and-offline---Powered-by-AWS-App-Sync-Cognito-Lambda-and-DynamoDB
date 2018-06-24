@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rai.utsav">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <!--Subscriptions-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icons8_desura_500"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <service android:name="org.eclipse.paho.android.service.MqttService" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.rai.utsav.RegisterUser"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.rai.utsav.AboutApp"
+            android:label="@string/title_activity_about_app"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.rai.utsav.ListProjectsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.rai.utsav.SignUpConfirm"
+            android:label="@string/title_activity_sign_up_confirm"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="com.rai.utsav.ForgotPasswordActivity"
+            android:label="@string/title_activity_forgot_password"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.rai.utsav.ChangePasswordActivity"
+            android:label="@string/title_activity_change_password"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="com.rai.utsav.NewPassword"
+            android:label="@string/title_activity_new_password"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AddProjectActivity"/>
+        <activity android:name=".ViewProjectActivity"/>
+    </application>
+
+</manifest>

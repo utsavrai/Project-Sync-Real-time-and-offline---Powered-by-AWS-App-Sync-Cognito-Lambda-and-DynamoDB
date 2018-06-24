@@ -1,0 +1,84 @@
+query {
+    allPosts {
+      items{
+        author
+      }
+        
+    }
+}
+
+mutation {
+    addPost(id: "2",author: "Deku",title:"Hero",content:"One for all",url:"oneForAll.com") {
+        id
+        author
+        title
+        content
+        url
+    		ups
+    		downs
+    }
+}
+
+4289384 46930887
+
+Its Correct output is:
+128371033.42551
+
+And Your Code's output is:
+128371033.42611
+
+
+mutation addPost {
+    addPost(
+        id: 3
+        author: "Kacchan"
+        title: "Explosion"
+        url: "https://www.Explosion.com/"
+        content: "Friend of Deku"
+    ) {
+        id
+        author
+        title
+        content
+        url
+        ups
+        downs
+    }
+}
+
+
+
+query {
+    listEvents {
+      items{
+      	id
+        comments{
+          items{
+            eventId
+          }
+        }
+      }
+        
+    }
+}
+
+
+
+{
+  "data": {
+    "listEvents": {
+      "items": [
+        {
+          "id": "52f3e5a8-b23b-4a36-b954-3818c7c250c6",
+          "comments": {
+            "items": [
+              {
+                "eventId": "52f3e5a8-b23b-4a36-b954-3818c7c250c6"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
